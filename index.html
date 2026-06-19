@@ -1,245 +1,178 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>vaibhav</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>physics. teaching. curiosity.</title>
 
-  <style>
-    :root {
-      --bg: #040405;
-      --fg: #f1f2f6;
-      --muted: #8b8f98;
-      --line: rgba(255,255,255,0.08);
-      --grid: rgba(255,255,255,0.04);
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
 
-    body {
-      font-family: inter, system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image:
-        linear-gradient(var(--grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 44px 44px;
-      pointer-events: none;
-      z-index: -1;
-    }
-
-    .layout {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      min-height: 100vh;
-    }
-
-    .side {
-      border-right: 1px solid var(--line);
-      padding: 3rem 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .name {
-      font-size: 2.4rem;
-      font-weight: 600;
-      letter-spacing: -0.03em;
-    }
-
-    .desc {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .focus {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .focus span {
-      display: block;
-      margin-top: 0.3rem;
-    }
-
-    .main {
-      padding: 3rem 3.5rem;
-    }
-
-    .section-title {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 2rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .project {
-      border: 1px solid var(--line);
-      padding: 1.8rem;
-      background: rgba(255,255,255,0.01);
-    }
-
-    .project h3 {
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin-bottom: 0.6rem;
-    }
-
-    .project p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.6;
-      margin-bottom: 1.2rem;
-    }
-
-    .equation {
-      font-family: ui-monospace, sfmono-regular, menlo, monospace;
-      font-size: 0.85rem;
-      line-height: 1.8;
-      color: #cfd3ff;
-      border-top: 1px dashed var(--line);
-      padding-top: 0.8rem;
-    }
-
-    .equation span {
-      color: var(--muted);
-    }
-
-    section {
-      margin-top: 4.5rem;
-    }
-
-    footer {
-      margin-top: 4rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--fg);
-      text-decoration: none;
-      border-bottom: 1px solid var(--line);
-    }
-
-    @media (max-width: 900px) {
-      .layout {
-        grid-template-columns: 1fr;
-      }
-
-      .side {
-        border-right: none;
-        border-bottom: 1px solid var(--line);
-      }
-    }
-  </style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <div class="layout">
 
-    <aside class="side">
-      <div>
-        <div class="name">vaibhav</div>
-        <div class="desc">
-          engineering student interested in physics,
-          structure, and systems that fail in interesting ways.
-          <br><br>
-          i like to take things apart, understand how they work, and put them back together. with a twist, obviously.
-          <br><br>
-          i do lots of work on aerodynamics and engineering physics, but i also have a soft spot for electricity and math. it's all connected anyway.
+<div id="intro">
+    <div class="intro-word">physics.</div>
+    <div class="intro-word">teaching.</div>
+    <div class="intro-word">curiosity.</div>
+</div>
+
+<header class="navbar">
+    <nav>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#physics-lab">physics lab</a>
+        <a href="#writing">writing</a>
+        <a href="#contact">contact</a>
+    </nav>
+</header>
+
+<main id="content">
+
+<section id="home" class="hero fade-in">
+
+    <div class="hero-text">
+        <h1>
+            physics.<br>
+            teaching.<br>
+            curiosity.
+        </h1>
+
+        <p>
+            trying to make difficult things feel inevitable.
+        </p>
+    </div>
+
+    <div class="portrait">
+        <div class="portrait-placeholder"><img src="peak.jpeg"></div>
+    </div>
+
+</section>
+
+<section id="about" class="section fade-in">
+    <h2>about</h2>
+
+    <p>
+        i've always been fascinated by the way mathematics seems to exist beneath everything.
+        the more physics i learn, the more it feels like we're uncovering a language that was
+        already there long before us. every equation, every proof, every strange result is
+        another glimpse into something much larger.
+    </p>
+
+    <p>
+        most of my time is spent studying physics, teaching, and building resources that make
+        difficult ideas a little more intuitive. i don't think understanding should feel
+        reserved for a handful of people. with enough curiosity, patience, and the right
+        explanation, almost anything can become clear.
+    </p>
+
+    <p>
+        i'm still learning. i probably always will be. that's what makes it exciting.
+        every answer seems to uncover a better question.
+    </p>
+</section>
+
+
+<section id="physics-lab" class="section fade-in">
+
+    <h2>physics lab</h2>
+
+    <p>
+        a small collection of notes, explanations, conversations, and experiments
+        built from the belief that difficult ideas deserve better explanations.
+    </p>
+
+    <div class="lab-links">
+
+        <a href="https://vaibhavchandranv.github.io/physics-lab" class="lab-link">
+            physics notes →
+        </a>
+
+        <a href="YOUR_DISCORD_LINK" class="lab-link">
+            discord community →
+        </a>
+
+    </div>
+
+</section>
+
+<section class="quote-section fade-in">
+
+    <blockquote>
+        The world is governed by numbers we may never fully comprehend.
+    </blockquote>
+
+    <p>keep looking anyway.</p>
+
+</section>
+
+<section id="goals" class="section fade-in">
+
+    <h2>goals</h2>
+
+    <div class="notebook">
+
+        <div class="entry">
+            build the clearest introductory physics resource i can.
         </div>
-      </div>
 
-      <div class="focus">
-        <strong>current focus:</strong>
-        <span>aerodynamics</span>
-        <span>olympiads</span>
-        <span>physics</span>
-      </div>
-    </aside>
-
-    <main class="main">
-
-      <div class="section-title">projects</div>
-
-      <div class="projects">
-
-        <div class="project">
-          <h3>aero-ai (concept)</h3>
-          <p>
-            adaptive flow control using feedback and learning
-            to suppress separation and instability.
-          </p>
-          <div class="equation">
-            ∂u/∂t + (u·∇)u = −∇p + ν∇²u<br>
-            <span>// governing flow dynamics</span>
-          </div>
+        <div class="entry">
+            teach students to trust their curiosity.
         </div>
 
-        <div class="project">
-          <h3>
-            <a href="https://vaibhavchandranv.github.io/physics-lab" target="_blank">
-              physics lab
-            </a>
-          </h3>
-          <p>
-            physics notes across exam boards, for igcse, a-level, and ib students. with a focus on problem-solving and intuition.
-          </p>
-          <div class="equation">
-            result = mean ± uncertainty<br>
-            <span>// experimental validation</span>
-          </div>
+        <div class="entry">
+            study theoretical physics at a deeper level.
         </div>
 
-      </div>
-
-      <section>
-        <div class="section-title">contacts</div>
-
-        <div class="project">
-          <h3>find me here:</h3>
-          <p>
-            <a href="https://github.com/vaibhavchandranv" target="_blank">
-              github
-            </a>
-            <a href="https://discordapp.com/users/902959565799309363" target="_blank">
-              discord
-            </a>
-            <a href="mailto:vaibhavnvc@gmail.com" target="_blank">
-              email
-            </a>
-          </p>
+        <div class="entry">
+            contribute something meaningful to science.
         </div>
-      </section>
 
-      <footer>
-        <span>© vaibhav</span>
-      </footer>
+    </div>
 
-    </main>
-  </div>
+</section>
+
+<section class="section fade-in">
+
+    <h2>currently</h2>
+
+    <div class="currently">
+
+        <p><span>learning</span> number theory</p>
+
+        <p><span>reading</span> the art of problem solving</p>
+
+        <p><span>thinking about</span> whether mathematics is invented or discovered</p>
+
+    </div>
+
+</section>
+
+<section id="contact" class="section fade-in">
+
+    <h2>contact</h2>
+
+    <div class="links">
+        <a href="mailto:vaibhavnvc@gmail.com">email</a>
+        <a href="https://discord.com/users/902959565799309363">discord</a>
+        <a href="https://github.com/vaibhavchandranv">github</a>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>made with curiosity.</p>
+    <p>vaibhav chandra © 2026</p>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
 </html>
