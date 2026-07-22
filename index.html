@@ -1,178 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>physics. teaching. curiosity.</title>
-<link rel="icon" type="image/x-icon" href="Group 7.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>vai.</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Group 7.ico">
 </head>
-
 <body>
 
-<div id="intro">
-    <div class="intro-word">physics.</div>
-    <div class="intro-word">teaching.</div>
-    <div class="intro-word">curiosity.</div>
-</div>
+    <canvas id="physics-canvas"></canvas>
 
-<header class="navbar">
-    <nav>
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#physics-lab">physics lab</a>
-        <a href="#goals">goals</a>
-        <a href="#contact">contact</a>
-    </nav>
-</header>
+    <main class="site">
 
-<main id="content">
-
-<section id="home" class="hero fade-in">
-
-    <div class="hero-text">
-        <h1>
-            physics.<br>
-            teaching.<br>
-            curiosity.
-        </h1>
-
-        <p>
-            trying to make difficult things feel inevitable.
-        </p>
-    </div>
-
-    <div class="portrait">
-        <div class="portrait-placeholder"><img src="peak.jpeg"></div>
-    </div>
-
-</section>
-
-<section id="about" class="section fade-in">
-    <h2>about</h2>
-
-    <p>
-        i've always been fascinated by the way mathematics seems to exist beneath everything.
-        the more physics i learn, the more it feels like we're uncovering a language that was
-        already there long before us. every equation, every proof, every strange result is
-        another glimpse into something much larger.
-    </p>
-
-    <p>
-        most of my time is spent studying physics, teaching, and building resources that make
-        difficult ideas a little more intuitive. i don't think understanding should feel
-        reserved for a handful of people. with enough curiosity, patience, and the right
-        explanation, almost anything can become clear.
-    </p>
-
-    <p>
-        i'm still learning. i probably always will be. that's what makes it exciting.
-        every answer seems to uncover a better question.
-    </p>
-</section>
+        <header class="topbar">
+            <a href="#" class="logo">vai.</a>
+        </header>
 
 
-<section id="physics-lab" class="section fade-in">
+        <section class="hero">
 
-    <h2>physics lab</h2>
+            <p class="eyebrow">
+                aspiring physicist · science educator · geopolitics nerd
+            </p>
 
-    <p>
-        a small collection of notes, explanations, conversations, and experiments
-        built from the belief that difficult ideas deserve better explanations.
-    </p>
+            <h1>
+                hi, i'm <span>vai.</span>
+            </h1>
 
-    <div class="lab-links">
+            <h2>
+                i want to understand the universe,<br>
+                explain it better,<br>
+                <em>and change how people learn science.</em>
+            </h2>
 
-        <a href="https://vaibhavchandranv.github.io/physics-lab" class="lab-link">
-            physics notes →
-        </a>
+            <p class="hero-description">
+                physics, science communication, education, geopolitics,
+                and the occasional model united nations conference.
+            </p>
 
-        <a href="YOUR_DISCORD_LINK" class="lab-link">
-            discord community →
-        </a>
+        </section>
 
-    </div>
 
-</section>
+        <section class="info-grid">
 
-<section class="quote-section fade-in">
+            <div class="info-card">
 
-    <blockquote>
-        The world is governed by numbers we may never fully comprehend.
-    </blockquote>
+                <span class="card-label">currently</span>
 
-    <p>keep looking anyway.</p>
+                <div class="current-list">
+                    <p>studying physics</p>
+                    <p>preparing for nsep</p>
+                    <p>building science education tools</p>
+                    <p>teaching students</p>
+                </div>
 
-</section>
+            </div>
 
-<section id="goals" class="section fade-in">
 
-    <h2>goals</h2>
+            <div class="info-card">
 
-    <div class="notebook">
+                <span class="card-label">the big goal</span>
 
-        <div class="entry">
-            build the clearest introductory physics resource i can.
-        </div>
+                <p class="about-text">
+                    to communicate science so clearly and effectively
+                    that science education itself has to change.
+                </p>
 
-        <div class="entry">
-            teach students to trust their curiosity.
-        </div>
+            </div>
 
-        <div class="entry">
-            study theoretical physics at a deeper level.
-        </div>
 
-        <div class="entry">
-            contribute something meaningful to science.
-        </div>
+            <div class="info-card">
 
-    </div>
+                <span class="card-label">beyond physics</span>
 
-</section>
+                <p class="about-text">
+                    fascinated by geopolitics, international relations,
+                    diplomacy, and the chaos of model united nations.
+                </p>
 
-<section class="section fade-in">
+            </div>
 
-    <h2>currently</h2>
 
-    <div class="currently">
+            <div class="info-card dream-card">
 
-        <p><span>learning</span> number theory</p>
+                <span class="card-label">dream school</span>
 
-        <p><span>reading</span> the art of problem solving</p>
+                <p class="dream-school">
+                    princeton
+                </p>
 
-        <p><span>thinking about</span> whether mathematics is invented or discovered</p>
+                <p class="dream-description">
+                    hopefully future physicist.
+                </p>
 
-    </div>
+            </div>
 
-</section>
+        </section>
 
-<section id="contact" class="section fade-in">
 
-    <h2>contact</h2>
+        <footer class="footer">
 
-    <div class="links">
-        <a href="mailto:vaibhavnvc@gmail.com">email</a>
-        <a href="https://discord.com/users/902959565799309363">discord</a>
-        <a href="https://github.com/vaibhavchandranv">github</a>
-    </div>
+            <span>© 2026 vai</span>
 
-</section>
+            <div class="footer-links">
+                <a href="https://github.com/vaibhavchandranv" target="_blank">github</a>
+                <a href="https://vaibhavchandranv.github.io/physics-lab/" target="_blank">physics lab</a>
+                <a href="mailto:vaibhavnvc@gmail.com">email</a>
+            </div>
 
-</main>
+        </footer>
 
-<footer>
-    <p>made with curiosity.</p>
-    <p>vaibhav chandra © 2026</p>
-</footer>
+    </main>
 
-<script src="main.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
