@@ -196,7 +196,7 @@ function connectParticles() {
 
 
                 ctx.strokeStyle =
-                    `rgba(184, 168, 255, ${opacity * 0.12})`;
+                    `rgba(135, 206, 235, ${opacity * 0.12})`;
 
 
                 ctx.lineWidth = 1;
