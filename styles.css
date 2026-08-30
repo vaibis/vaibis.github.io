@@ -448,3 +448,43 @@ h2 em {
     }
 
 }
+
+.work-card {
+    cursor: pointer;
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.work-card:hover {
+    border-color: rgba(77, 163, 255, 0.55);
+
+    background: rgba(7, 9, 13, 0.7);
+
+    transform: translateY(-4px);
+}
+
+
+.work-title {
+    margin-bottom: 0.4rem;
+
+    color: var(--text);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    letter-spacing: -0.03em;
+}
+
+
+.work-description {
+    color: var(--muted);
+
+    font-size: 0.75rem;
+
+    line-height: 1.6;
+}
