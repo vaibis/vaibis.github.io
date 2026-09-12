@@ -488,3 +488,20 @@ h2 em {
 
     line-height: 1.6;
 }
+
+.card-actions {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.card-actions a {
+    color: var(--muted);
+    font-family: monospace;
+    font-size: 0.68rem;
+    transition: color 0.2s ease;
+}
+
+.card-actions a:hover {
+    color: var(--accent-bright);
+}
